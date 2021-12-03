@@ -1,0 +1,41 @@
+// colors
+$Dark: #111;
+$Light: #fff;
+$BackgroundColor: $Dark;
+$ForegroundColor: $Light;
+$MainColor: brown;
+
+// fonts
+$MainFont: "Poppins", sans-serif;
+$h1-size: 2em;
+$h2-size: 1.5em;
+
+// font sizes
+
+// Border Radius
+$bRadius: 3px;
+
+@font-face {
+  font-family: "sans serif";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Poppins Light"), local("Poppins-Light"), url(fonts/Poppins-Light.ttf) format("ttf");
+}
+@font-face {
+  font-family: "sans serif";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Poppins"), local("Poppins"), url(fonts/Poppins-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "sans serif";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Poppins Medium"), local("Poppins-Medium"), url(fonts/Poppins-Medium.ttf) format("ttf");
+}
+@font-face {
+  font-family: "sans serif";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url(fonts/Poppins-SemiBold.ttf) format("ttf");
+}

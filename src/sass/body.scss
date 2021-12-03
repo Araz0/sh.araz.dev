@@ -1,0 +1,41 @@
+a {
+  color: $ForegroundColor;
+}
+body {
+  background-color: $BackgroundColor;
+  color: $ForegroundColor;
+  font-family: $MainFont;
+}
+h1 {
+  font-size: $h1-size;
+  margin: 1em auto;
+  text-align: center;
+}
+h2 {
+  font-size: $h2-size;
+  margin: 0.7em auto;
+  text-align: center;
+}
+p {
+  line-height: 1.3em;
+  font-size: 0.85em;
+}
+section {
+  padding: 1em 2em;
+  p {
+    line-height: 2em;
+  }
+}
+
+body > * {
+  margin: 0 auto;
+  max-width: 55em;
+}
+
+logo-style {
+  border-radius: 1em 1em 0em 1em;
+  padding: 0.2em 0.5em;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+}

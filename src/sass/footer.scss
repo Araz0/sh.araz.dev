@@ -1,0 +1,22 @@
+#footer-section{
+    padding-bottom: 3em;
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 25em;
+        margin: 0 auto;
+        a{
+            display:inline;
+            
+        }
+    }
+    svg{
+        width: 2.5em;
+        display: block;
+        height: 2.5em;
+        background-color: $ForegroundColor;
+        border-radius: 25%;
+        fill: $BackgroundColor;
+        
+    }
+}
