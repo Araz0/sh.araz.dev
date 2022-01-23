@@ -9,7 +9,7 @@
     "build:js": "esbuild ./src/js/index.js --bundle --outfile=./public/js/script.js",
     "build:favicons": "rsync -vaE --progress ./src/favicons/ ./public/favicons/",
     "build:fonts": "rsync -vaE --progress ./src/fonts/ ./public/fonts",
-    "build:images": "rsync -vaE --progress ./src/media/ ./public/media",
+    "build:media": "rsync -vaE --progress ./src/media/ ./public/media",
     "build": "npm-run-all build:*"
   },
   "keywords": [],
