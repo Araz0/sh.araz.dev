@@ -161,10 +161,6 @@ a {
   font-weight: 700;
   src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url(fonts/Poppins-SemiBold.ttf) format("ttf");
 }
-a {
-  color: #fff;
-}
-
 body {
   background-color: #111;
   color: #fff;
@@ -227,6 +223,10 @@ logo-style {
   background-color: #fff;
   border-radius: 25%;
   fill: #111;
+}
+
+a {
+  color: brown;
 }
 
 /*# sourceMappingURL=style.css.map */
