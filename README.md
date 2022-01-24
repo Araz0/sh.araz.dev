@@ -7,7 +7,6 @@ This Document will serve as a Log and To-do page of the project until its done.
 - [ ] Add OAuth. ?
 - [ ] Design the Page
 
-
 ### config.php
 `
 if ($_SERVER['HTTP_HOST'] == 'your.site.com') {
@@ -32,3 +31,4 @@ try {
 }
 ?>
 `
+
