@@ -2,6 +2,7 @@
 ini_set('display_errors', true);
 require "extentions/config.php";
 include "extentions/config.php";
+
 function insertUrl($sufix, $og_url, $user_id, $expiration_date, $is_active){
     global $pdo;
     $dateNow = date('Y-m-d H:i:s');
@@ -24,4 +25,11 @@ function getUrl($sufix) {
     $sth = $pdo->prepare($query);
     $sth->execute(array($sufix));
     return $sth->fetch();
+}
+function getUserUrls($user){
+    global $pdo;
+    $query = "SELECT * FROM urls WHERE user_id=?";
+    $sth = $pdo->prepare($query);
+    $sth->execute(array($user));
+    return $sth->fetchAll();
 }

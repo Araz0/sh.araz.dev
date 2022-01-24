@@ -1,6 +1,5 @@
 <?php 
 ini_set('display_errors', true);
-include("extentions/defines.php");
 
 // function for creating the random string for the unique url
 function generate_sufix($length){
@@ -18,10 +17,18 @@ function str_exists($variable){
 	}
 	return false;
 }
-function validate_url($url){
-	if (filter_var($url, FILTER_VALIDATE_URL) === true) {
-		return $url;
-	} else {
-		return $url;
+function valid_url($url){
+	//https://websolutionstuff.com/post/how-to-validate-url-in-php-with-regex
+	$regex = "((https?|ftp)\:\/\/)?";
+	$regex .= "([a-z0-9+!*(),;?&=\$_.-]+(\:[a-z0-9+!*(),;?&=\$_.-]+)?@)?";
+	$regex .= "([a-z0-9-.]*)\.([a-z]{2,3})";
+	$regex .= "(\:[0-9]{2,5})?";
+	$regex .= "(\/([a-z0-9+\$_-]\.?)+)*\/?";
+	$regex .= "(\?[a-z+&\$_.-][a-z0-9;:@&%=+\/\$_.-]*)?";
+	$regex .= "(#[a-z_.-][a-z0-9+\$_.-]*)?";
+
+	if (preg_match("/^$regex$/i", $url)) {
+		return true;
 	}
+	return false;
 }
